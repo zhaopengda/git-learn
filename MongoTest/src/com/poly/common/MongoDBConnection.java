@@ -21,6 +21,7 @@ public class MongoDBConnection {
 	 private static MongoClient mongoClient;
 	 private static MongoCollection eventsCollection;
 	 
+	 
 	 /**
 	  * 获取mongo连接
 	  */
