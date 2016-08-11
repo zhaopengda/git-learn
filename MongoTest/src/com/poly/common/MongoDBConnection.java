@@ -56,8 +56,10 @@ public class MongoDBConnection {
 		 eventsCollection = getCollection();
  		 FindIterable table = eventsCollection.find();
  		 MongoCursor  mCursor = table.iterator();
-
+ 		 long count = 0;
  		 while (mCursor.hasNext()) {
+ 			 count ++;
+ 			 System.out.println(count+"  -------------------");
 			System.out.println(mCursor.next());
 		 }
 	 }
@@ -67,8 +69,8 @@ public class MongoDBConnection {
 	  */
 	 public static void findByParam(){
 		 BasicDBObject dbObject = new BasicDBObject();
-		 dbObject.put("level", "INFO");
-		 dbObject.put("thread", "http-nio-8080-exec-27");
+		 dbObject.put("level", "9999");
+//		 dbObject.put("thread", "http-nio-8080-exec-27");
 
 		 eventsCollection = getCollection();
 		 MongoCursor cursor = eventsCollection.find(dbObject).iterator();
@@ -78,8 +80,8 @@ public class MongoDBConnection {
 	 }
 	 
 	 public static void main( String args[] ){
-		 findAll();
-//		 findByParam();
+//		 findAll();
+		 findByParam();
 	 }
 
 }
