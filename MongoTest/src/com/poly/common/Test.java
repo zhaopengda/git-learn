@@ -26,6 +26,8 @@ public class Test {
 		//-------又告一段落-------
 		
 		//develop再次发起一个release
+		
+		//这是在release分支上开发的
 	}
 
 }
