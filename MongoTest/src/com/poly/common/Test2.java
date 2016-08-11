@@ -6,5 +6,6 @@ public class Test2 {
 		System.out.println("2");
 	}
 	// 改了点东西
-
+	
+	//稳定版V1这块有bug，很快就修复了
 }
