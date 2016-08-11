@@ -22,6 +22,10 @@ public class Test {
 		// 再次发起一个release版
 		
 		// 啊 不行，release版本上也有bug，我修复一次
+		
+		//-------又告一段落-------
+		
+		//develop再次发起一个release
 	}
 
 }
